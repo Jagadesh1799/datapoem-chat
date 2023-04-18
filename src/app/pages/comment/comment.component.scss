@@ -1,0 +1,155 @@
+
+@import  '../../../styles.scss';
+
+:host {
+    width: 375px;
+    height: 100%;
+}
+
+.commet-container {
+    max-height: 20%;
+}
+
+.comment {
+    margin: 10px;
+    background-color: $white !important;
+    padding: 15px;
+    border-radius: 5px;
+}
+.reply-comments-container {
+    margin-left: 10px;
+    border-left: 2px solid lightgray;
+}
+.reply-comments {
+    margin-left: 30px;
+}
+.user-name, .time-at {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.user-name{
+    font-weight: 600;
+}
+.padge {
+    background: $blue;
+    color: $white;
+    font-size: 10px;
+    padding: 1px 2px;
+    border-radius: 2px;
+}
+.time-at {
+    color: $gray-blue;
+}
+.reply-btn {
+    color: $blue;
+    font-weight: 500;
+    img {
+        margin-top: -2px;
+    }
+}
+.replyto {
+    color: $blue;
+    font-weight: 500;
+}
+.edit-btn {
+    color: $blue;
+    font-weight: 500;
+    img {
+        margin-top: -2px;
+    }
+}
+.delete-btn {
+    color: $soft-red;
+    font-weight: 500;
+    img {
+        margin-top: -2px;
+    }
+}
+.user-img {
+    margin-top: 5px;
+}
+.message-container{
+    padding-left: 10px;
+}
+.score {
+    background: $light-gray;
+    border-radius: 5px;
+    align-items: center !important;
+    cursor: pointer;
+}
+.score-number{
+    padding-top: 5px;
+    color: $blue !important;
+    font-weight: 500;
+}
+
+.mobile-view-container{
+    margin-top: 10px;
+}
+
+.message-content{
+    color: $gray-blue;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: $blue;
+    color: $white;
+    padding: 0px 15px !important;
+    border: 0px;
+    border-radius: 5px;
+    height: 35px;
+    font-weight: 400;
+}
+
+.input-box {
+    height: 100px;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    padding: 5px;
+}
+
+
+@media only screen and (min-width: 700px) {
+    :host {
+        width: 700px !important;
+    }
+    .mobile-view-container {
+        display: none !important;
+    }
+    .bottom-row {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .reply-btn-desktop {
+        display: none !important;
+    }
+    .score-container {
+        display: none !important;
+    }
+    .desktop {
+        display: none !important;
+    }
+    .input-container {
+        max-width: 100% !important;
+    }
+    .submit-btn{
+        margin-right: 20px !important;
+    }
+    .message-box {
+        .bottom-row {
+            margin-top: 10px !important;
+        } 
+    }
+    .reply-comments {
+        margin-left: 10px;
+    }
+    .score-btn {
+        padding: 3px 7px;
+    }
+}
