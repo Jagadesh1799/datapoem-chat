@@ -85,28 +85,28 @@
 <ng-template #actionButtonContainer let-comment="comment">
   <div *ngIf="comment.user.username === currentUser.username">
     <button class="btn delete-btn" (click)="actionOn('DELETE', comment)">
-      <img src="../../../assets/images/icon-delete.svg" height="10"> Delete
+      <img src="assets/images/icon-delete.svg" height="10"> Delete
     </button>
     <button class="btn edit-btn" (click)="actionOn('UPDATE', comment)">
-      <img src="../../../assets/images/icon-edit.svg" height="10"> Edit
+      <img src="assets/images/icon-edit.svg" height="10"> Edit
     </button>
   </div>
 
   <div *ngIf="comment.user.username !== currentUser.username">
     <button class="btn reply-btn" (click)="actionOn('REPLY', comment)">
-      <img src="../../../assets/images/icon-reply.svg" height="10"> Reply
+      <img src="assets/images/icon-reply.svg" height="10"> Reply
     </button>
   </div>
 </ng-template>
 
 <ng-template #scoreContainer let-comment="comment">
   <div class="score-btn" (click)="increaseScore(comment)">
-    <img src="../../../assets/images/icon-plus.svg" height="10" width="10">
+    <img src="assets/images/icon-plus.svg" height="10" width="10">
   </div>
   <div class="score-btn score-number">
     <span>{{comment.score}}</span>
   </div>
   <div class="score-btn" (click)="decreaseScore(comment)">
-    <img src="../../../assets/images/icon-minus.svg" width="10">
+    <img src="assets/images/icon-minus.svg" width="10">
   </div>
 </ng-template>
